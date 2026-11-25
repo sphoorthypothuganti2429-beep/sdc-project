@@ -47,7 +47,13 @@ services:
 volumes:
   db_data:
   wp_data:
-
+-----------------------
+services:
+  web:
+    build: .
+    container_name: maven-container
+    ports:
+      - "3001:8080"
 --------------------------------------------------------------------
 
 3.docker-cli
